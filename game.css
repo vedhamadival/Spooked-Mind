@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Creepster&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bitter:wght@500;700;701&family=Luckiest+Guy&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Creepster&family=Metal+Mania&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#game-bg{
+    background-image:url('./assets/interior-scary-house-with-doors-bloody-footprints-candles-halloween-cartoon-vector-illustration-corridor_273525-36.avif');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.timer{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+.box{
+    height: 90px;
+    width: 90px;
+    margin:5px;
+    background-color:  #F0B858;
+    border-radius: 10px;
+}
+
+.container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height:400px;
+    width: 400px;
+    background-color: aliceblue;
+    margin-top: 150px;
+    margin-left:200px;
+    padding: 20px;
+
+}
