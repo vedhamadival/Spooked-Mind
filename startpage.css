@@ -15,7 +15,7 @@ body{
 #input-bg{
     height: 100vh;
     width:100vw;
-    background-image: url("./assets/4444 (1).jpg");
+    background-image: url("../assets/4444 (1).jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -38,6 +38,7 @@ body{
     justify-content: space-between;
     align-items: center;
 }
+
 #input ,#level{
     font-size: 50px;
     font-family: 'Metal Mania', cursive;
@@ -45,14 +46,60 @@ body{
     justify-content: space-between;
 }
 
-
-#submit,#nickname,#easy , #medium ,#difficult {
+#submit, #nickname, #easy , #medium ,#difficult{
     font-family: 'Metal Mania' , cursive;
     padding: 10px;
     font-size: 20px;
+    border-radius: 2%;
+    background-color: #443D6A;
+    color:#F0B858;
+    text-align: center;
 }
+
+#nickname{
+    margin-left: 110px;
+}
+#submit{
+    margin-left: 180px;
+    background-color:;
+}
+
+#easy,
+#medium,
+#difficult{
+    margin-left: 40px;
+}
+
 #level{
     flex-direction: column;
     align-items: center;
     gap:20px;
+}
+
+@media (max-width: 768px) {
+    #container {
+        height:400px;
+        width: 300px; 
+    }
+
+    #input,
+    #level {
+        font-size: 20px; 
+        padding-left:20px; 
+    }
+    #nickname{
+        margin-top: 10px;
+        margin-left: 10px;
+    }
+    #submit{
+        margin-top: 10px;
+        margin-left: 80px;
+    }
+    
+    #easy,
+    #medium,
+    #difficult{
+        margin-top: 0;
+        margin-left: 40px;
+    }
 }

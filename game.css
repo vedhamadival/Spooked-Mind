@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Creepster&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Bitter:wght@500;700;701&family=Luckiest+Guy&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Creepster&family=Metal+Mania&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Creepster&family=Metal+Mania&family=Nosifer&display=swap');
 
 *{
     margin: 0;
@@ -9,35 +10,91 @@
 }
 
 #game-bg{
-    background-image:url('./assets/interior-scary-house-with-doors-bloody-footprints-candles-halloween-cartoon-vector-illustration-corridor_273525-36.avif');
+    background-image:url("../assets/interior-scary-house-with-doors-bloody-footprints-candles-halloween-cartoon-vector-illustration-corridor_273525-36.avif");
     background-repeat: no-repeat;
     background-size: cover;
+    height: 100vh;
+    width:100vw;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 99vh;
+    text-align: center;
 }
 
-.timer{
+#timer{
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
     align-items: flex-end;
+    padding: 20px;
+    font-family: 'Nosifer', cursive;
+    font-size: 30px;
+    color: #F0B858;
 }
 .box{
-    height: 90px;
-    width: 90px;
+    height: 125px;
+    width: 125px;
     margin:5px;
-    background-color:  #F0B858;
+    background-color: #F0B858;
     border-radius: 10px;
 }
-
-.container{
+.container ,.container1{
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    height:400px;
-    width: 400px;
+    height:550px;
+    width: 550px;
     background-color: aliceblue;
-    margin-top: 150px;
-    margin-left:200px;
-    padding: 20px;
+    border-radius: 5%;
+    margin-top: 0px;
+    margin-left:500px;
+    padding: 30px;
+}
+.container2{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height:600px;
+    width: 850px;
+    background-color: aliceblue;
+    border-radius: 5%;
+    margin-top: 0px;
+    margin-left:350px;
+    padding: 50px;
+}
 
+@media (max-width: 768px) {
+    #timer {
+        font-size: 16px; 
+    }
+
+    .box {
+        height: 50px;
+        width: 50px; 
+    }
+
+    .container {
+        height: 200px; 
+        width: 200px; 
+        padding: 10px;
+        margin-top: 200px;
+        margin-left:100px; 
+    }
+    .container1{
+        height: 250px; 
+        width: 250px; 
+        padding: 10px;
+        margin-top: 200px;
+        margin-left:85px; 
+    }
+    .container2 {
+        height: 250px; 
+        width: 380px; 
+        padding: 20px; 
+        margin-top: 200px;
+        margin-left: 30px;
+    }
 }
