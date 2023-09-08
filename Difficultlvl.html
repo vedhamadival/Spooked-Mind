@@ -7,68 +7,87 @@
     <title>Difficult</title>
 </head>
 <body id="game-bg">
-    <div id="timer">TIMER: <span>60Sec</span></div>
+    <div id="timer">TIMER: <span id="time">60</span></div>
     <section class="memory-game">
-        <div class="memory-card">
-          <img class="front-face" src="./assets/cartoon-vampire-with-red-eyes-fangs-generative-ai_955884-25674.jpg" alt="React">
-          <img class="back-face" src="./assets/hand-drawn-flat-halloween-background_23-2149081010.avif" alt="Memory Card">
-        </div>
-      
-        <div class="memory-card">
-          <img class="front-face" src="./assets/cartoon-vampire-with-red-eyes-fangs-generative-ai_955884-25674.jpg" alt="React">
-          <img class="back-face" src="./assets/hand-drawn-flat-halloween-background_23-2149081010.avif" alt="Memory Card">
-        </div>
-      
-        <div class="memory-card">
-          <img class="front-face" src="./assets/cartoon-zombie-girl-with-long-hair-purple-eyes-generative-ai_955884-25730.jpg" alt="Angular">
-          <img class="back-face" src="./assets/hand-drawn-flat-halloween-background_23-2149081010.avif" alt="Memory Card">
-        </div>
-      
-        <div class="memory-card">
-          <img class="front-face" src="./assets/cartoon-zombie-girl-with-long-hair-purple-eyes-generative-ai_955884-25730.jpg" alt="Angular">
-          <img class="back-face" src="./assets/hand-drawn-flat-halloween-background_23-2149081010.avif" alt="Memory Card">
-        </div>
-      
-        <div class="memory-card">
-          <img class="front-face" src="./assets/goblin-cartoon-character-sticker_1308-65377.avif" alt="Ember">
-          <img class="back-face" src="./assets/hand-drawn-flat-halloween-background_23-2149081010.avif" alt="Memory Card">
-        </div>
-      
-        <div class="memory-card">
-          <img class="front-face" src="./assets/goblin-cartoon-character-sticker_1308-65377.avif" alt="Ember">
-          <img class="back-face" src="./assets/hand-drawn-flat-halloween-background_23-2149081010.avif" alt="Memory Card">
-        </div>
-      
-        <div class="memory-card">
-          <img class="front-face" src="./assets/zombie-holding-his-brain_1308-35515.avif" alt="Vue">
-          <img class="back-face" src="./assets/hand-drawn-flat-halloween-background_23-2149081010.avif" alt="Memory Card">
-        </div>
-      
-        <div class="memory-card">
-          <img class="front-face" src="./assets/zombie-holding-his-brain_1308-35515.avif" alt="Vue">
-          <img class="back-face" src="./assets/hand-drawn-flat-halloween-background_23-2149081010.avif" alt="Memory Card">
-        </div>
-      
-        <div class="memory-card">
-          <img class="front-face" src="./assets/wicked-old-witch-face-white-background_1308-77737.avif" alt="Backbone">
-          <img class="back-face" src="./assets/hand-drawn-flat-halloween-background_23-2149081010.avif" alt="Memory Card">
-        </div>
-      
-        <div class="memory-card">
-          <img class="front-face" src="./assets/wicked-old-witch-face-white-background_1308-77737.avif" alt="Backbone">
-          <img class="back-face" src="./assets/hand-drawn-flat-halloween-background_23-2149081010.avif" alt="Memory Card">
-        </div>
-      
-        <div class="memory-card">
-          <img class="front-face" src="./assets/half-body-zombie_1308-27485.avif" alt="Aurelia">
-          <img class="back-face" src="./assets/hand-drawn-flat-halloween-background_23-2149081010.avif" alt="Memory Card">
-        </div>
-      
-        <div class="memory-card">
-          <img class="front-face" src="./assets/half-body-zombie_1308-27485.avif" alt="Aurelia">
-          <img class="back-face" src="./assets/hand-drawn-flat-halloween-background_23-2149081010.avif" alt="Memory Card">
-        </div>
-      </section>
-</div>
+      <div class="memory-card"  data-framework="vamp">
+        <img class="front-face" src="./assets/cartoon-vampire-with-red-eyes-fangs-generative-ai_955884-25674.jpg">
+        <img class="back-face" src="./assets/hand-drawn-flat-halloween-background_23-2149081010.avif">
+      </div>
+      <div class="memory-card" data-framework="vamp">
+        <img class="front-face" src="./assets/cartoon-vampire-with-red-eyes-fangs-generative-ai_955884-25674.jpg">
+        <img class="back-face" src="./assets/hand-drawn-flat-halloween-background_23-2149081010.avif">
+      </div>
+    
+      <div class="memory-card" data-framework="zomb">
+        <img class="front-face" src="./assets/cartoon-zombie-girl-with-long-hair-purple-eyes-generative-ai_955884-25730.jpg">
+        <img class="back-face" src="./assets/hand-drawn-flat-halloween-background_23-2149081010.avif">
+      </div>
+    
+      <div class="memory-card" data-framework="zomb">
+        <img class="front-face" src="./assets/cartoon-zombie-girl-with-long-hair-purple-eyes-generative-ai_955884-25730.jpg">
+        <img class="back-face" src="./assets/hand-drawn-flat-halloween-background_23-2149081010.avif">
+      </div>
+    
+      <div class="memory-card" data-framework="goblin">
+        <img class="front-face" src="./assets/goblin-cartoon-character-sticker_1308-65377.avif">
+        <img class="back-face" src="./assets/hand-drawn-flat-halloween-background_23-2149081010.avif">
+      </div>
+    
+      <div class="memory-card" data-framework="goblin">
+        <img class="front-face" src="./assets/goblin-cartoon-character-sticker_1308-65377.avif">
+        <img class="back-face" src="./assets/hand-drawn-flat-halloween-background_23-2149081010.avif">
+      </div>
+    
+      <div class="memory-card" data-framework="zomb-brain">
+        <img class="front-face" src="./assets/zombie-holding-his-brain_1308-35515.avif">
+        <img class="back-face" src="./assets/hand-drawn-flat-halloween-background_23-2149081010.avif">
+      </div>
+    
+      <div class="memory-card" data-framework="zomb-brain">
+        <img class="front-face" src="./assets/zombie-holding-his-brain_1308-35515.avif">
+        <img class="back-face" src="./assets/hand-drawn-flat-halloween-background_23-2149081010.avif">
+      </div>
+    
+      <div class="memory-card" data-framework="witch">
+        <img class="front-face" src="./assets/wicked-old-witch-face-white-background_1308-77737.avif">
+        <img class="back-face" src="./assets/hand-drawn-flat-halloween-background_23-2149081010.avif">
+      </div>
+    
+      <div class="memory-card" data-framework="witch">
+        <img class="front-face" src="./assets/wicked-old-witch-face-white-background_1308-77737.avif">
+        <img class="back-face" src="./assets/hand-drawn-flat-halloween-background_23-2149081010.avif">
+      </div>
+    
+      <div class="memory-card" data-framework="half-body">
+        <img class="front-face" src="./assets/half-body-zombie_1308-27485.avif">
+        <img class="back-face" src="./assets/hand-drawn-flat-halloween-background_23-2149081010.avif">
+      </div>
+    
+      <div class="memory-card" data-framework="half-body">
+        <img class="front-face" src="./assets/half-body-zombie_1308-27485.avif">
+        <img class="back-face" src="./assets/hand-drawn-flat-halloween-background_23-2149081010.avif">
+      </div>
+
+      <div class="memory-card" data-framework="girl-knife">
+        <img class="front-face" src="./assets/girl-zombie-character_1308-27481.avif">
+        <img class="back-face" src="./assets/hand-drawn-flat-halloween-background_23-2149081010.avif">
+      </div>
+    
+      <div class="memory-card" data-framework="girl-knife">
+        <img class="front-face" src="./assets/girl-zombie-character_1308-27481.avif">
+        <img class="back-face" src="./assets/hand-drawn-flat-halloween-background_23-2149081010.avif">
+      </div>
+
+      <div class="memory-card" data-framework="hammer-zombie">
+        <img class="front-face" src="./assets/zombie-character_1308-27163.avif">
+        <img class="back-face" src="./assets/hand-drawn-flat-halloween-background_23-2149081010.avif">
+      </div>
+    
+      <div class="memory-card" data-framework="hammer-zombie">
+        <img class="front-face" src="./assets/zombie-character_1308-27163.avif">
+        <img class="back-face" src="./assets/hand-drawn-flat-halloween-background_23-2149081010.avif">
+      </div>
+    </section>
+    <script src="./game.js"></script>
 </body>
 </html>

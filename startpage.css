@@ -46,12 +46,12 @@ body{
     justify-content: space-between;
 }
 
-#submit, #nickname, #easy , #medium ,#difficult{
+#submit, #nickname, #easy,#difficult{
     font-family: 'Metal Mania' , cursive;
     padding: 10px;
     font-size: 20px;
     border-radius: 2%;
-    background-color: #443D6A;
+    background-color: #27243e;
     color:#F0B858;
     text-align: center;
 }
@@ -61,13 +61,11 @@ body{
 }
 #submit{
     margin-left: 180px;
-    background-color:;
 }
 
 #easy,
-#medium,
 #difficult{
-    margin-left: 40px;
+    margin-left: 100px;
 }
 
 #level{
@@ -97,7 +95,6 @@ body{
     }
     
     #easy,
-    #medium,
     #difficult{
         margin-top: 0;
         margin-left: 40px;

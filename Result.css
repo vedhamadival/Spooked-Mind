@@ -41,7 +41,7 @@
     height: 99vh;
     text-align: center;
 }
-#play-again-button{
+#play-again-button , #play-again-level{
     border: 2px;
     background-color:  rgb(252, 175, 7);
     border-radius: 25%;

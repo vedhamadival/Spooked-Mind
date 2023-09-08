@@ -7,11 +7,13 @@
     <title>You Lost</title>
 </head>
 <body id="gameover-bg">
-        <h2>Stuck in here forever</h2>
+        <h2 id="lose-phrase">Stuck in here forever</h2>
         <h3>YOU LOST!!</h3>
-        <div id="flips">FLIPS:<span id="flip">17</span></div>
+        <!-- <div id="flips">FLIPS:<span id="flip">17</span></div> -->
+        <audio id="loseAudio" autoplay>
+            <source src="./assets/possessed-horror-voice-you-are-not-safe-vol-001-141760.mp3" type="audio/mp3">
+        </audio>
         <button id="play-again-button">PLAY AGAIN</button>
         <script src="result.js"></script>
-        <!-- <script src="game.js"></script> -->
 </body>
 </html>

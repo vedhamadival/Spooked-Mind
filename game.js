@@ -1,5 +1,4 @@
 const cards = document.querySelectorAll('.memory-card');
-
 let hasFlippedCard = false;
 let firstCard, secondCard;
 let lockboard=false;
@@ -8,15 +7,18 @@ let totalcards=12;
 let flips=0;
 
 let bgm= new Audio("./assets/Assets_Audio_creepy.mp3");
+// let bgm= new Audio("./assets/spooked-164545.mp3");
 bgm.play();
 bgm.loop=true;
 let flipsnd=new Audio("./assets/Assets_Audio_flip.wav");
 let wrngsnd=new Audio("./assets/boo-and-laugh-7060.mp3");
+let lose=new Audio("./assets/possessed-horror-voice-you-are-not-safe-vol-001-141760.mp3");
+
 
 function flipCard(){
     flipsnd.play();
-    // flips++;
-    console.log(flips)
+    flips++;
+    localStorage.setItem("flips",flips);
    if(lockboard) return;
     this.classList.add('flip');
     if (!hasFlippedCard){
@@ -28,7 +30,6 @@ function flipCard(){
      hasFlippedCard = false;
      checkForMatch();
      gameover();
-    //  flipcount();
 }
 
  function checkForMatch() {
@@ -65,24 +66,15 @@ function flipCard(){
  cards.forEach(card => card.addEventListener('click', flipCard));
 
 function gameover(){
- if (flippedcards == totalcards){
-  flipcount();
+ if (flippedcards == totalcards)
   window.location.href="win.html";
  }
-}
-
-function flipcount(){
-  if(flippedcards == totalcards){
-    let flip  = document.getElementById("flip");
-    flip.innerText=flips;
-    console.log(flips)
-  }
-}
 
  let time=60;
  function updatetimer(){
     if(time<=0){
         window.location.href = "lost.html";
+        lose.play();
     }
     else{
         time--
@@ -90,4 +82,3 @@ function flipcount(){
     }
 }
 setInterval(updatetimer,1000)
-
