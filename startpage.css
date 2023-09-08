@@ -15,7 +15,7 @@ body{
 #input-bg{
     height: 100vh;
     width:100vw;
-    background-image: url("../assets/4444 (1).jpg");
+    background-image: url("./assets/4444 (1).jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
