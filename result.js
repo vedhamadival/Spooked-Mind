@@ -12,6 +12,12 @@ var flipscore=document.getElementById("flip")
 flipscore.innerText=localStorage.getItem("flips")
 console.log(flips);
 
+// var flipnum=document.getElementById("flipnum")
+// flipnum.innerText=localStorage.getItem("Leastflips")
+
+
+
+
 window.addEventListener("load", function () {
     const loseAudio = document.getElementById("loseAudio");
     loseAudio.play();

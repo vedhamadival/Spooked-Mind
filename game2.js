@@ -84,4 +84,4 @@ function gameover(){
         document.getElementById("time").innerText = time;
     }
 }
-setInterval(updatetimer,1000)
+setInterval(updatetimer,300)

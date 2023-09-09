@@ -5,8 +5,7 @@ let lockboard=false;
 let flippedcards=0;
 let totalcards=12;
 let flips=0;
-let Highscore;
-
+// let LeastFlips = Infinity;
 
 let bgm= new Audio("./assets/Assets_Audio_creepy.mp3");
 // let bgm= new Audio("./assets/spooked-164545.mp3");
@@ -17,24 +16,34 @@ let wrngsnd=new Audio("./assets/boo-and-laugh-7060.mp3");
 let lose=new Audio("./assets/possessed-horror-voice-you-are-not-safe-vol-001-141760.mp3");
 
 
+// if (flips < LeastFlips) {
+//   LeastFlips = flips; // Update LeastFlips with the new lowest value
+//   localStorage.setItem("LeastFlips", LeastFlips); // Store the lowest flips in localStorage
+// }
+
+//Flip the Card and add a class flip to the card that is clicked
 function flipCard(){
     flipsnd.play();
     flips++;
-    localStorage.setItem("flips",flips);
+    localStorage.setItem("flips",flips/2);
    if(lockboard) return;
   //  if (this === firstCard) return;
     this.classList.add('flip');
     if (!hasFlippedCard){
         hasFlippedCard = true;
+        //the card clicked will be added to the firstcard
         firstCard = this;
        return;
      }
+     //the secondcard clicked will be added to the secondcard
      secondCard = this;
      hasFlippedCard = false;
      checkForMatch();
      gameover();
 }
 
+
+//checking if the cards match
  function checkForMatch() {
    if (firstCard.dataset.framework === secondCard.dataset.framework) {
      disableCards();
@@ -42,6 +51,7 @@ function flipCard(){
    }
    unflipCards();
  }
+
 
  function disableCards() {
    firstCard.removeEventListener('click', flipCard);
