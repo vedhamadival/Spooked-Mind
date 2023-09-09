@@ -1,8 +1,8 @@
+    document.addEventListener("DOMContentLoaded", function () {
+        let mainbg=document.getElementById("main-bg")
+        mainbg.play();
+});
 
-window.addEventListener("load", function () {
-    const mainbg=document.getElementById("main-bg")
-    mainbg.play();
-  })
 
 var playbtn=document.getElementById("play")
 

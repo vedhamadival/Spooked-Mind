@@ -3,7 +3,7 @@ let hasFlippedCard = false;
 let firstCard, secondCard;
 let lockboard=false;
 let flippedcards=0;
-let totalcards=12;
+let totalcards=16;
 let flips=0;
 let Highscore;
 
