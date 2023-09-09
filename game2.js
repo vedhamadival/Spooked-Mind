@@ -16,13 +16,11 @@ let flipsnd=new Audio("./assets/Assets_Audio_flip.wav");
 let wrngsnd=new Audio("./assets/boo-and-laugh-7060.mp3");
 let lose=new Audio("./assets/possessed-horror-voice-you-are-not-safe-vol-001-141760.mp3");
 
-
 function flipCard(){
     flipsnd.play();
     flips++;
     localStorage.setItem("flips",flips);
    if(lockboard) return;
-  //  if (this === firstCard) return;
     this.classList.add('flip');
     if (!hasFlippedCard){
         hasFlippedCard = true;

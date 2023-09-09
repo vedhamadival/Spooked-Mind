@@ -12,10 +12,8 @@ var flipscore=document.getElementById("flip")
 flipscore.innerText=localStorage.getItem("flips")
 console.log(flips);
 
-// var flipnum=document.getElementById("flipnum")
-// flipnum.innerText=localStorage.getItem("Leastflips")
-
-
+var flipnum=document.getElementById("flipnum")
+flipnum.innerText=localStorage.setItem("LeastFlips", LeastFlips)
 
 
 window.addEventListener("load", function () {
